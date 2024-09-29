@@ -1,0 +1,8 @@
+/dist/*
+/release/*
+/scripts/*
+/packages/common/map/*
+# **/*.ts
+**/*.md
+**/*.yaml
+**/*.json

@@ -1,0 +1,52 @@
+.control-container {
+  pointer-events: visible;
+  position: fixed;
+  top: 50%;
+  right: 90px;
+  z-index: 1;
+  width: 406px;
+  height: 800px;
+  transform: translateY(-50%);
+  background:
+    url("@/assets/images/line-border.png") no-repeat top -52px right -70px,
+    url("@/assets/images/line-border.png") no-repeat bottom -57px right -70px,
+    url("@/assets/images/letfCtrlbg.png") no-repeat;
+  background-size:
+    432px 112px,
+    432px 112px,
+    100% 100%;
+  box-sizing: border-box;
+  animation: 0.7s fadeInRight;
+  font-family: Source Han Sans CN;
+  @keyframes fadeInRight {
+    0% {
+      transform: translate(399px, -50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0%, -50%);
+      opacity: 1;
+    }
+  }
+
+  :deep(.el-loading-text) {
+    color: #1fedff;
+  }
+
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+    line-height: 42px;
+    background: rgba($color: #0074b7, $alpha: 0.6);
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+
+    .title-box-color {
+      color: #1fedff;
+    }
+  }
+}

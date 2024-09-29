@@ -1,0 +1,12 @@
+node_modules/
+dist/
+release/
+index.html
+scripts/
+# .eslintrc.js
+*.d.ts
+3dtiles.js
+basis-worker.js
+draco-worker.js
+
+modules/main_entrance/public

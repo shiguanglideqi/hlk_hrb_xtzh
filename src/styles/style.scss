@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Han Sans CN-Regular";
+  --el-bg-color-overlay: rgba(0, 42, 62, 0.9);
+  --el-border-color-light: rgba(0, 116, 183, 0.8);
+  --el-fill-color-blank: rgba(0, 42, 62, 0.9);
+  --el-text-color-regular: #ffffff;
+}
+
+body div {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Source Han Sans CN-Regular";
+  src: url("/font/Source Han Sans CN-Regular.otf");
+}
+
+@font-face {
+  font-family: "Source Han Sans CN-Normal";
+  src: url("/font/Source Han Sans CN-Normal.otf");
+}
+
+@font-face {
+  font-family: "Source Han Sans CN-Bold";
+  src: url("/font/Source Han Sans CN-Bold.otf");
+}
+
+@font-face {
+  font-family: "Source Han Sans CN-Light";
+  src: url("/font/Source Han Sans CN-Light.otf");
+}
+
+@font-face {
+  font-family: "Source Han Sans CN-Medium";
+  src: url("/font/Source Han Sans CN-Medium.otf");
+}
+
+@font-face {
+  font-family: "YouSheBiaoTiHei";
+  src: url("/font/YouSheBiaoTiHei-2.ttf");
+}
+
+.pointer {
+  cursor: pointer;
+  user-select: none;
+}
+
+.el-input {
+  --el-input-border-color: #0074b7 !important;
+  --el-input-text-color: #e6e6e6 !important;
+  --el-input-hover-border-color: #00a2ff !important;
+}
+
+.el-input.is-disabled .el-input__wrapper {
+  background-color: rgba(0, 42, 62, 0.9);
+  border: 1px solid #0074b7;
+  box-shadow: none;
+}
+
+.el-select {
+  --el-border-color: #0074b7;
+  --el-border-color-hover: #00a2ff;
+  --el-fill-color-light: rgba(0, 116, 183, 0.5);
+  --el-color-primary: #00a2ff;
+}
+
+.el-select__selected-item {
+  .el-tag {
+    background: linear-gradient(0, rgba(56, 201, 255, 0.08) 0%, rgba(56, 201, 255, 0.73) 100%);
+    border: none;
+    color: #fff;
+
+    .el-tag__close {
+      color: #fff;
+    }
+  }
+}
+
+.el-picker__popper.el-popper {
+  --el-datepicker-border-color: #0074b7;
+  --el-border-color-lighter: #0074b7;
+
+  .el-input {
+    --el-input-border-color: #0074b7 !important;
+    --el-input-text-color: #e6e6e6 !important;
+    --el-input-hover-border-color: #00a2ff !important;
+    --el-disabled-bg-color: rgba(0, 42, 62, 0.9) !important;
+    --el-disabled-border-color: transparent !important;
+  }
+
+  .el-button {
+    background: linear-gradient(0, rgba(56, 201, 255, 0.08) 0%, rgba(56, 201, 255, 0.73) 100%);
+    border: none;
+  }
+}
+
+.el-date-editor {
+  --el-input-border-color: #0074b7;
+  --el-border-color: #0074b7;
+  --el-input-border-color: #0074b7 !important;
+  --el-input-text-color: #e6e6e6 !important;
+  --el-input-hover-border-color: #00a2ff !important;
+  --el-text-color-primary: #fff;
+}
+
+.el-picker-panel__icon-btn {
+  color: #fff !important;
+}
+
+.el-picker-panel .el-time-panel {
+  --el-datepicker-border-color: #0074b7;
+  --el-fill-color-light: rgba(56, 201, 255, 0.3);
+}
+
+.el-date-range-picker {
+  --el-datepicker-inner-border-color: rgba(56, 201, 255, 0.2) !important;
+  --el-datepicker-inrange-bg-color: rgba(56, 201, 255, 0.2) !important;
+  --el-datepicker-inrange-hover-bg-color: rgba(56, 201, 255, 0.3) !important;
+  --el-datepicker-active-color: rgba(56, 201, 255, 1) !important;
+}
+
+.el-message-box {
+  --el-bg-color: rgba(0, 42, 62, 0.9);
+  --el-messagebox-title-color: #fff;
+}
+
+.el-overlay-message-box {
+  z-index: 9999;
+}
